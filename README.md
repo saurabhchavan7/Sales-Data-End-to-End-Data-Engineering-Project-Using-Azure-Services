@@ -1,17 +1,17 @@
 # Azure-Based Sales Data Engineering Pipeline
 
 ## Project Overview
-This project focuses on building a scalable, cloud-native data engineering pipeline using Microsoft Azure services. The goal was to automate data ingestion, transformation, storage, and reporting for a retail sales dataset while ensuring data governance and security best practices.
+This project focuses on building a scalable, cloud-native data engineering pipeline using Microsoft Azure services. The goal was to automate data ingestion, transformation, storage, and reporting for a car sales dataset while ensuring data governance and security best practices.
 
 ## Architecture Diagram
 ![Architecture Diagram](./architecture/sales_etl.png)
 
 
 ## Key Features
-- **Scalable Data Pipeline:** Engineered an end-to-end Azure Data Engineering Pipeline using Azure Data Factory, Databricks, and Data Lake, processing over **1 million records**.
+- **Scalable Data Pipeline:** Engineered an end-to-end Azure Data Engineering Pipeline using Azure Data Factory, Databricks, and Data Lake.
 - **Incremental Data Loading:** Implemented Change Data Capture (CDC) with **Azure SQL Stored Procedures**, reducing data load times by **40%**.
 - **Dimensional Modeling:** Designed a **star schema** using **Delta Lake** with **5+ fact and dimension tables** for optimized query performance.
-- **Automation:** Automated data transformations using **PySpark** and **Databricks Workflows**, reducing manual intervention by **90%**.
+- **Automation:** Automated data transformations using **PySpark** and **Databricks Workflows**, reducing manual intervention by **80%**.
 - **Data Governance:** Enhanced governance using **Unity Catalog** for schema enforcement, data lineage, and role-based access control (RBAC).
 - **Visualization:** Integrated **Power BI** for real-time data visualization and reporting with **Direct Query** and **Import Mode** for optimized analytics.
 
@@ -54,7 +54,7 @@ This project focuses on building a scalable, cloud-native data engineering pipel
 - **Transformation Steps:**
   - Cleansing and standardizing data using **PySpark** in **Azure Databricks**.
   - Removal of duplicates and handling missing values.
-- Achieved **90% reduction** in manual intervention with automated workflows.
+- Achieved **80% reduction** in manual intervention with automated workflows.
 
 ### Step 5: Dimensional Modeling and Star Schema
 - **Star Schema Design:**
@@ -78,19 +78,6 @@ This project focuses on building a scalable, cloud-native data engineering pipel
 - **Row-Level Security (RLS)** and **Direct Query Mode** were implemented for real-time reporting.
 
 ---
-
-## Key Achievements
-- Built a scalable Azure data pipeline handling **1 million+ records**.
-- Reduced data load times by **40%** using CDC and watermark tables.
-- Designed a **5+ table star schema** for optimized query performance.
-- Automated **90%** of data preparation tasks with PySpark and Databricks Workflows.
-- Enhanced governance with **Unity Catalog** ensuring **100% compliance**.
-
-## Challenges and Solutions
-- **Data Volume Management:** Implemented **parallel data loading** in ADF.
-- **Data Quality:** Enforced schema validation using **Unity Catalog**.
-- **Security:** **Role-Based Access Control (RBAC)** was implemented with Azure AD.
-- **Performance:** Used **Delta Lake** for faster queries and optimized data storage.
 
 ## Real-World Impact
 - **Faster Insights:** Business stakeholders can access real-time sales data instantly.
