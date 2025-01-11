@@ -4,7 +4,8 @@
 This project focuses on building a scalable, cloud-native data engineering pipeline using Microsoft Azure services. The goal was to automate data ingestion, transformation, storage, and reporting for a retail sales dataset while ensuring data governance and security best practices.
 
 ## Architecture Diagram
-![Architecture Diagram](./architecture/sales_etl.pdf)
+![Architecture Diagram](./architecture/sales_etl.png)
+
 
 ## Key Features
 - **Scalable Data Pipeline:** Engineered an end-to-end Azure Data Engineering Pipeline using Azure Data Factory, Databricks, and Data Lake, processing over **1 million records**.
